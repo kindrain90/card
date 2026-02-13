@@ -1,5 +1,5 @@
 {
   "name": "card",
   "compatibility_date": "2026-02-13",
-  "main": "worker.js"
+  "main": "src/index.js"
 }
