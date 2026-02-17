@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데시네마 할인 카드 가이드 | 스마트한 영화 관람</title>
+    <meta name="description" content="롯데시네마에서 할인받을 수 있는 신용카드, 통신사, 멤버십 혜택을 한눈에 비교해보세요.">
+    <meta name="theme-color" content="#FDFBF7">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="logo" id="homeLogo" style="cursor: pointer;">LOTTE &nbsp;<span>CINEMA</span></h1>
+            <p class="subtitle">롯데시네마 최신 할인 가이드 <span
+                    style="font-size: 0.5em; border: 1.5px solid var(--primary-color); color: var(--primary-color); padding: 2px 10px; border-radius: 20px; margin-left: 10px; font-weight: 600; font-family: 'Noto Sans KR'; vertical-align: middle; display: inline-block;">2026.02
+                    Ver</span></p>
+            <p class="notice">※ 자세한 내용은 해당 카드사 홈페이지를 확인해주시기 바랍니다.</p>
+        </header>
+
+        <!-- 카드사 필터 탭 -->
+        <div class="issuer-tabs">
+            <button class="tab-btn active" data-issuer="all">전체</button>
+            <button class="tab-btn" data-issuer="lotte">롯데</button>
+            <button class="tab-btn" data-issuer="kb">KB국민</button>
+            <button class="tab-btn" data-issuer="samsung">삼성</button>
+            <button class="tab-btn" data-issuer="shinhan">신한</button>
+            <button class="tab-btn" data-issuer="hyundai">현대</button>
+            <button class="tab-btn" data-issuer="woori">우리</button>
+            <button class="tab-btn" data-issuer="hana">하나</button>
+            <button class="tab-btn" data-issuer="nh">NH농협</button>
+        </div>
+
+        <section id="cardGrid" class="card-grid">
+            <!-- 자바스크립트에 의해 동적으로 생성됩니다 -->
+        </section>
+    </div>
+
+    <!-- ✅ 카드 상세 모달(로컬 확인용) -->
+    <div id="imageModal" class="modal" style="display:none;">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="close-modal" type="button" aria-label="닫기">&times;</button>
+
+            <h2 id="modalTitle" class="modal-title"></h2>
+
+            <img id="modalImg" class="modal-img" alt="" />
+
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="cardall_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
